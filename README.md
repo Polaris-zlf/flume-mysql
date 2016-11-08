@@ -8,13 +8,7 @@
 6、生成数据到目标日志文件中：
   [sparkadmin@hadoop4 ~]$ for i in {1..1000};do echo "exec tail$i" >> /home/sparkadmin/cloud/data/log;done;
 7、完成后，数据和预想中的一样，写入了数据库中。
-mysql> select * from test1;
-+------+---------------+
-| id   | content       |
-+------+---------------+
-|   4 | exec tail1    |
-|   5 | exec tail2    |
-|   6 | exec tail3    |
-.................
+  mysql> select * from test1;
+
 
 完整文章可以参考：http://blog.csdn.net/u012689336/article/details/53079941
